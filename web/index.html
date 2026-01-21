@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>QR-code Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icon.png" type="image/x-icon">
+  <script type="text/javascript" src="/eel.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="logo">QR-code Generator</div>
+      <div class="input-group">
+        <input
+          id="url-input"
+          type="text"
+          placeholder="Вставьте ссылку для генерации QR-кода"
+        />
+        <button id="generate-btn">Сгенерировать</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="library-wrapper">
+        <h2 class="section-title">Библиотека QR-кодов</h2>
+        <div id="qr-grid" class="qr-grid scroll-area">
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
